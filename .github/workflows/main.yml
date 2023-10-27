@@ -19,7 +19,7 @@ jobs:
       - name: Permission
         run: |
           ls -la
-          chmod runner:runner *
+          chmod 777 *
           
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2.0.0
