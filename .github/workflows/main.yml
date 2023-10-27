@@ -18,8 +18,8 @@ jobs:
 
       - name: Print Git Version
         run: |
-          chown -R runner *
-          sudo -u runner git config --global --add safe.directory "/.github/workspace"
+          chown -R runner /github/workspace
+          sudo -u runner git config --global --add safe.directory "/github/workspace"
           
 
       - name: Configure AWS Credentials
