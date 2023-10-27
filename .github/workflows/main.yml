@@ -18,7 +18,7 @@ jobs:
 
       - name: Permission
         run: |
-          ls -ls
+          ls -la
           chown root:root README.md
           
       - name: Configure AWS Credentials
