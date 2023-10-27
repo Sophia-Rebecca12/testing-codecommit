@@ -16,8 +16,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Check the data
-        run: ls $GITHUB_WORKSPACE
+      - name: Print Git Version
+        run: |
+          git --version
+          whoami
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2.0.0
