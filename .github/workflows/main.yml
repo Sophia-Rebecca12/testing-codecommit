@@ -18,7 +18,7 @@ jobs:
 
       - name: Print Git Version
         run: |
-          chown -R runner /github/workspace
+          chown -R runner *
           git config --global --add safe.directory "*"
           
 
