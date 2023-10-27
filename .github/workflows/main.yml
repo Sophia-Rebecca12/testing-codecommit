@@ -19,13 +19,13 @@ jobs:
       - name: Debug
         run: |
           pwd
+          chown -R runner /home/runner/work/testing-codecommit/testing-codecommit
           ls
           ls -l /github
           ls -l /github/workspace
 
       - name: Print Git Version
         run: |
-          chown -R runner /github/workspace
           sudo -u runner git config --global --add safe.directory "/github/workspace"
           
       - name: Configure AWS Credentials
