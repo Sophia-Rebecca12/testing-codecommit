@@ -19,6 +19,7 @@ jobs:
       - name: Debug
         run: |
           pwd
+          ls
           ls -l /github
           ls -l /github/workspace
 
