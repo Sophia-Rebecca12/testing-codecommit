@@ -15,18 +15,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
-      - name: Debug
-        run: |
-          pwd
-          chown -R runner /home/runner/work/testing-codecommit/testing-codecommit
-          ls
-          ls -l /github
-          ls -l /github/workspace
-
-      - name: Print Git Version
-        run: |
-          sudo -u runner git config --global --add safe.directory "/github/workspace"
           
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2.0.0
