@@ -29,7 +29,7 @@ jobs:
           aws-region: us-east-1
           
       - name: Sync up to CodeCommit
-        uses: Sophia-Rebecca12/testing-codecommit@main
+        uses: SophiaRebecca12/testing-codecommit@main
         with:
           repository_name: testing-codecommit
           aws_region: us-east-1
